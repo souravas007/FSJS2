@@ -1,0 +1,118 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+  /*height: 100%;*/
+  object-fit: cover;
+}
+
+img[alt="brand-logo"] {
+  width: 100px;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.container {
+  margin: 3em 4em;
+}
+
+.nav-button {
+  background-color: #5955b3;
+  padding: 1.2em 2.4em;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.grow-list {
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+  color: #acacac;
+}
+
+.list-item:first-child {
+  color: black;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.banner-container div:first-child {
+  max-width: 50%;
+}
+
+.banner-container div:last-child {
+  max-width: 50%;
+}
+
+.heading-text {
+  color: #3c2f60;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.heading-text span {
+  color: #5955b3;
+}
+
+.description {
+  color: #acacac;
+  margin-bottom: 3em;
+}
+
+@media (max-width: 960px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+
+  .grow-list {
+    margin: 0;
+  }
+
+  .heading-text {
+    font-size: 2rem;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

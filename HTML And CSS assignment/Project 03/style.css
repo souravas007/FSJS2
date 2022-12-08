@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    padding: 1em 3em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+img[alt="brand-logo"] {
+    width: 90px;
+}
+
+svg {
+    width: 20px;
+}
+
+.nav-button {
+    padding: 0.3em 1.4em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.list-item:hover {
+    box-shadow: 0 11px 0 -8px black;
+    font-size: 1.2rem;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.hero-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.square, .star, .globe {
+    position: absolute;
+    display: none;
+}
+
+.star {
+    display: inline-block;
+    top: 2%;
+    right: 10%;
+}
+
+.star:nth-child(2) {
+    top: 80%;
+    left: 10%;
+}
+
+.star img {
+    width: 40px;
+}
+
+.globe {
+    display: inline-block;
+    top: 1%;
+    left: 60%;
+}
+
+.globe img {
+    width: 50px;
+}
+
+img[alt="person-hero-iamge"] {
+    max-width: 360px;
+    object-fit: cover;
+}
+
+div img[alt="person-hero-iamge"] {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    translate: 0 -55%;
+}
+
+.square {
+    display: inline-block;
+    z-index: -1;
+    top: 40%;
+    left: 10%;
+    translate: 0 -20%;
+}
+
+.square img {
+    width: 400px;
+}
+
+.hero-container-right {
+    width: 60%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.hero-heading {
+    font-size: 5rem;
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.button-email, .button-join {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.button-email {
+    background-color: transparent;
+    padding: 1rem 4rem;
+}
+
+.button-join {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.contact-heading {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 4rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icons span img {
+    width: 30px;
+    cursor: pointer;
+}

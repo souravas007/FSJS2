@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VS Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="box-border">
+    <!-- Nav Bar -->
+    <nav
+      class="bg-[#2C2C32] flex justify-evenly items-center h-16 text-[#7A7A7E]"
+    >
+      <div class="flex gap-x-4 justify-evenly items-center cursor-pointer">
+        <img src="./assets/logo.png" alt="logo" class="object-cover h-6" />
+        <div class="text-white">Visual Studio Code</div>
+        <ul class="flex gap-x-4">
+          <li>Docs</li>
+          <li>Updates</li>
+          <li>Blog</li>
+          <li>API</li>
+          <li>Extensions</li>
+          <li>FAQ</li>
+          <li>Learn</li>
+        </ul>
+      </div>
+      <div class="flex justify-evenly items-center">
+        <button
+          class="flex gap-x-2 justify-evenly items-center bg-[#3D3D42] p-5 m-0 cursor-text"
+        >
+          <img
+            src="./assets/search.svg"
+            alt="search"
+            class="object-cover h-4"
+          />
+          <span>Search Docs</span>
+        </button>
+        <button
+          class="flex gap-x-2 text-white justify-evenly items-center bg-[#0066B8] p-5 m-0"
+        >
+          <img
+            src="./assets/download.svg"
+            alt="download"
+            class="object-cover h-4"
+          />
+          <span>Download</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Educational Purpose -->
+    <div class="bg-[#1a1a1f] text-white text-sm font-light text-center py-2">
+      For Educational Purpose Only
+    </div>
+    <!-- Updates -->
+    <div class="bg-[#25252B] p-4 text-center">
+      <p class="text-[#CCCCCC]">
+        <span class="text-[#0098F1] cursor-pointer">Version 1.74</span> is now
+        available! Read about the new features and fixes from November.
+      </p>
+    </div>
+
+    <!-- First Page -->
+
+    <div class="bg-[#2C2C32] flex flex-wrap justify-center items-center">
+      <div class="flex flex-col items-center gap-4">
+        <h1 class="text-white text-6xl font-light">Code editing.</h1>
+        <h1 class="text-white text-6xl">Redefined.</h1>
+        <h2 class="text-[#ABABAD]">
+          Free. Built on open source. Runs everywhere.
+        </h2>
+        <div class="flex gap-1">
+          <button class="bg-[#0066B8] p-5 m-0">
+            <div class="flex justify-around items-center">
+              <img
+                src="./assets/download.svg"
+                alt="download"
+                class="object-cover h-8"
+              />
+              <span class="text-white text-2xl font-semibold">.deb</span>
+            </div>
+            <div class="mt-2 text-white font-medium">Debian, Ubuntu...</div>
+          </button>
+          <button class="bg-[#0066B8] p-5 m-0">
+            <div class="flex justify-around items-center">
+              <img
+                src="./assets/download.svg"
+                alt="download"
+                class="object-cover h-8"
+              />
+              <span class="text-white text-2xl font-semibold">.rpm</span>
+            </div>
+            <div class="mt-2 text-white font-medium">Redhat, Fedora...</div>
+          </button>
+          <button class="bg-[#0066B8] p-5 m-0">
+            <img src="./assets/down.svg" alt="down" class="object-cover h-8" />
+          </button>
+        </div>
+
+        <p class="bg-[#25252B] px-8 py-2 text-[#0098FF]">
+          <span class="cursor-pointer hover:underline">Web</span>,
+          <span class="cursor-pointer hover:underline">Insiders edition</span>
+          <span class="text-[#ABABAD]">, or</span>
+          <span class="cursor-pointer hover:underline">other platforms</span>
+        </p>
+        <p class="text-[#ABABAD] w-96 text-center">
+          By using VS Code, you agree to its
+          <span class="cursor-pointer text-[#0098FF] hover:underline"
+            >license and privacy statement.</span
+          >
+        </p>
+      </div>
+      <div class="w-2/3 text-center">
+        <img
+          src="./assets/vscode.png"
+          alt="vscode"
+          class="object-cover w-[75%] m-auto"
+        />
+      </div>
+    </div>
+    <!-- Second Page -->
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 place-items-stretch">
+      <a
+        href="#"
+        class="flex flex-col justify-center items-center gap-3 h-36 hover:bg-gray-100"
+      >
+        <i
+          class="fa-solid fa-lightbulb text-5xl text-gray-800 hover:text-purple-500"
+        ></i>
+        <span class="text-lg">IntelliSense</span>
+      </a>
+
+      <a
+        href="#debug"
+        class="flex flex-col justify-center items-center gap-3 h-36 hover:bg-gray-100"
+      >
+        <i
+          class="fa-solid fa-code text-5xl text-gray-800 hover:text-green-500"
+        ></i>
+        <span class="text-lg">Run and Debug</span>
+      </a>
+
+      <a
+        href="#git"
+        class="flex flex-col justify-center items-center gap-3 h-36 hover:bg-gray-100"
+      >
+        <i
+          class="fa-solid fa-code-branch text-5xl text-gray-800 hover:text-red-500"
+        ></i>
+        <span class="text-lg">Built-in Git</span>
+      </a>
+
+      <a
+        href="#extensions"
+        class="flex flex-col justify-center items-center gap-3 h-36 hover:bg-gray-100"
+      >
+        <i class="fa-solid fa-file text-5xl text-gray-800 hover:text-black"></i>
+        <span class="text-lg">Extensions</span>
+      </a>
+    </div>
+
+    <!-- social -->
+    <div class="bg-[#F5F5F5] py-16">
+      <div
+        class="flex flex-col justify-around items-center mx-24 gap-4 md:flex-row"
+      >
+        <i class="fa-regular fa-less-than"></i>
+        <div>
+          <img class="rounded-full w-16" src="./assets/Una.jpg" alt="profile" />
+          <div class="text-sm font-bold">
+            Una Kravets <span class="text-xs font-thin">@Una</span>
+          </div>
+          <p class="text-xs text-[#444444] max-w-xs leading-5">
+            VS @code does so many things right. I’m constantly impressed by the
+            UX, and customizing workspace / user preferences is no exception.
+            🙌🏼💯 It just keeps getting better ❤️
+          </p>
+        </div>
+        <div>
+          <img class="rounded-full w-16" src="./assets/Una.jpg" alt="profile" />
+          <div class="text-sm font-bold">
+            Jonathan Dunlap <span class="text-xs font-thin">@jadbox</span>
+          </div>
+          <p class="text-xs text-[#444444] max-w-xs leading-5">
+            VS Code will have deep remote development. You can connect to a
+            container running a different OS and use any VS Code plugins,
+            linting, debugging for that environment. 🔥🔥🔥
+          </p>
+        </div>
+        <div>
+          <img class="rounded-full w-16" src="./assets/Una.jpg" alt="profile" />
+          <div class="text-sm font-bold">
+            Pavithra Kodmad <span class="text-xs font-thin">@PKodmad</span>
+          </div>
+          <p class="text-xs text-[#444444] max-w-xs leading-5">
+            VS Code is my most used and favorite editor. I love being able to
+            customize the editor - changing the layout, the icons, fonts and
+            color scheme is so easy!
+          </p>
+        </div>
+        <i class="fa-regular fa-greater-than"></i>
+      </div>
+    </div>
+
+    <!-- Intellisense -->
+    <div class="p-12">
+      <div class="flex gap-8 justify-center items-start max-w-[1000px] m-auto">
+        <img src="./assets/home-intellisense.svg" alt="IntelliSense" class="" />
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-light">
+            Print statement debugging is a thing of the past.
+          </h2>
+          <p class="leading-8 font-normal text-sm">
+            Debug code right from the editor. Launch or attach to your running
+            apps and debug with break points, call stacks, and an interactive
+            console.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Debug -->
+    <div class="p-12 bg-[#F5F5F5]">
+      <div class="flex gap-8 justify-center items-start max-w-[1000px] m-auto">
+        <img src="./assets/home-debug.svg" alt="Debug" class="order-1" />
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-light">
+            Print statement debugging is a thing of the past.
+          </h2>
+          <p class="leading-8 font-normal text-sm">
+            Debug code right from the editor. Launch or attach to your running
+            apps and debug with break points, call stacks, and an interactive
+            console.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Git -->
+    <div class="p-12">
+      <div class="flex gap-8 justify-center items-start max-w-[1000px] m-auto">
+        <img src="./assets/home-git.svg" alt="Git" />
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-light">Git commands built-in.</h2>
+          <p class="leading-8 font-normal text-sm">
+            Working with Git and other SCM providers has never been easier.
+            Review diffs, stage files, and make commits right from the editor.
+            Push and pull from any hosted SCM service.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extension -->
+    <div class="p-12 bg-[#F5F5F5]">
+      <div class="flex gap-8 justify-center items-start max-w-[1000px] m-auto">
+        <img
+          src="./assets/Hundreds-of-Extensions.png"
+          alt="Extensions"
+          class="order-1 w-[50%]"
+        />
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-light">Extensible and customizable.</h2>
+          <p class="leading-8 font-normal text-sm">
+            Want even more features? Install extensions to add new languages,
+            themes, debuggers, and to connect to additional services. Extensions
+            run in separate processes, ensuring they won't slow down your
+            editor.
+            <a href="#" class="text-[#0071BE] cursor-pointer"
+              >Learn more about extensions.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deploy -->
+    <div class="p-12">
+      <div class="flex gap-8 justify-center items-start max-w-[1000px] m-auto">
+        <img src="./assets/home-azure.svg" alt="Deploy" />
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-light">Deploy with confidence and ease</h2>
+          <p class="leading-8 font-normal text-sm">
+            With
+            <a href="#" class="text-[#0071BE] cursor-pointer">
+              Microsoft Azure </a
+            >you can deploy and host your React, Angular, Vue, Node, Python (and
+            more!) sites, store and query relational and document based data,
+            and scale with serverless computing, all with ease,
+            <a href="#" class="text-[#0071BE] cursor-pointer">
+              all from within VS Code.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- // extensions all files  -->
+    <div class="p-12 bg-[#F5F5F5]">
+      <div
+        class="flex flex-col gap-8 justify-center items-center max-w-[1000px] m-auto"
+      >
+        <h3 class="text-2xl font-light">VS Code for</h3>
+        <ul class="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-6">
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+          <li class="flex flex-row items-center gap-1">
+            <img
+              src="./assets/javascript.svg"
+              alt="javascript"
+              class="w-[30px]"
+            />
+            <p>javascript</p>
+          </li>
+        </ul>
+        <a href="#" class="text-[#0098FF] font-normal text-sm hover:underline"
+          >and many more languages on the Marketplace...</a
+        >
+        <button
+          class="bg-[#0066B8] text-neutral-100 py-3 px-5 font-medium mt-2 hover:bg-[#035699]"
+        >
+          Get Started Now
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#333333] p-4 py-8">
+      <div class="flex justify-around text-xs">
+        <div class="text-white flex gap-4">
+          <span>Hello from Seattle.</span>
+          <span class="hover:text-gray-400 cursor-pointer">Follow @code</span>
+        </div>
+        <ul class="flex flex-row gap-4 text-neutral-100">
+          <li><a href="#" class="hover:text-gray-400">Support</a></li>
+          <li><a href="#" class="hover:text-gray-400">Privacy</a></li>
+          <li><a href="#" class="hover:text-gray-400">Terms of Use</a></li>
+          <li><a href="#" class="hover:text-gray-400">License</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b3202fd536.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
